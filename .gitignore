@@ -7,6 +7,11 @@
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
+/.idea
+buildSrc
+/buildSrc/build
+
+
 .DS_Store
 /build
 /captures

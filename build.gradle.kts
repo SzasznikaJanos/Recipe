@@ -6,16 +6,12 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath(BuildPlugins.androidGradle)
-        classpath(BuildPlugins.kotlinGradle)
+        classpath(ClassPaths.androidGradle)
+        classpath(ClassPaths.kotlinGradle)
+        classpath(ClassPaths.hilt)
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
 }
 
-tasks{
-    val clean by registering(Delete::class) {
-        delete(buildDir)
-    }
-}

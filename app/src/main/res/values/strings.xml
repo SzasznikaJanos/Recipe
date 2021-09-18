@@ -1,3 +1,36 @@
 <resources>
     <string name="app_name">Recipe</string>
+
+
+    <!--Diets-->
+    <string name="diet_gluten_free_name">Gluten Free</string>
+    <string name="diet_gluten_free_description">Eliminating gluten means avoiding wheat, barley, rye, and other gluten-containing grains and foods made from them (or that may have been cross contaminated).</string>
+
+    <string name="diet_ketogenic_name">Ketogenic</string>
+    <string name="diet_ketogenic_description">The keto diet is based more on the ratio of fat, protein,and carbs in the diet rather than specific ingredients. Generally speaking, high fat, protein-rich foods are acceptable and high carbohydrate foods are not.</string>
+
+    <string name="diet_vegetarian_name">Vegetarian</string>
+    <string name="diet_vegetarian_description">No ingredients may contain meat or meat by-products, such as bones or gelatin.</string>
+
+    <string name="diet_lacto_vegetarian_name">Lacto-Vegetarian</string>
+    <string name="diet_lacto_vegetarian_description">All ingredients must be vegetarian and none of the ingredients can be or contain egg.</string>
+
+    <string name="diet_ovo_vegetarian_name">Ovo-Vegetarian</string>
+    <string name="diet_ovo_vegetarian_description">All ingredients must be vegetarian and none of the ingredients can be or contain dairy.</string>
+
+    <string name="diet_vegan_name">Vegan</string>
+    <string name="diet_vegan_description">No ingredients may contain meat or meat by-products, such as bones or gelatin, nor may they contain eggs, dairy, or honey.</string>
+    
+    <string name="diet_pescetarian_name">Pescetarian</string>
+    <string name="diet_pescetarian_description">Everything is allowed except meat and meat by-products - some pescetarians eat eggs and dairy, some do not</string>
+
+    <string name="diet_paleo_name">Paleo</string>
+    <string name="diet_paleo_description">Allowed ingredients include meat (especially grass fed), fish, eggs, vegetables, some oils (e.g. coconut and olive oil), and in smaller quantities, fruit, nuts, and sweet potatoes. We also allow honey and maple syrup (popular in Paleo desserts, but strict Paleo followers may disagree). Ingredients not allowed include legumes (e.g. beans and lentils), grains, dairy, refined sugar, and processed foods.</string>
+
+    <string name="diet_primal_name">Primal</string>
+    <string name="diet_primal_description">Very similar to Paleo, except dairy is allowed - think raw and full fat milk, butter, ghee, etc.</string>
+
+    <string name="diet_whole30_name">Whole30</string>
+    <string name="diet_whole30_description">Allowed ingredients include meat, fish/seafood, eggs, vegetables, fresh fruit, coconut oil, olive oil, small amounts of dried fruit and nuts/seeds. Ingredients not allowed include added sweeteners (natural and artificial, except small amounts of fruit juice), dairy (except clarified butter or ghee), alcohol, grains, legumes (except green beans, sugar snap peas, and snow peas), and food additives, such as carrageenan, MSG, and sulfites.</string>
+
 </resources>

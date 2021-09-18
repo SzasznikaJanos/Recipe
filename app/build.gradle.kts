@@ -1,10 +1,12 @@
 plugins {
-    id (Plugins.android)
-    id (Plugins.kotlinAndroid)
+    id(Plugins.android)
+    id(Plugins.kotlinAndroid)
+    id(Plugins.hilt)
+    kotlin("kapt")
 }
 
 android {
-   compileSdk = Config.compileSdk
+    compileSdk = Config.compileSdk
 
     defaultConfig {
         applicationId = Config.appId
@@ -18,8 +20,11 @@ android {
 
     buildTypes {
         getByName("release") {
-            isMinifyEnabled =  false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            isMinifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
     compileOptions {
@@ -41,21 +46,21 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+
+    configurations.all {
+        resolutionStrategy.force(Dependencies.Test.jupiter)
+    }
+}
+
+tasks.withType<Test> {
+    useJUnitPlatform()
 }
 
 dependencies {
-
-    implementation (Dependencies.coreKtx)
-    implementation (Dependencies.appCompat)
-    implementation (Dependencies.material)
-    implementation (Dependencies.Compose.composeUi)
-    implementation (Dependencies.Compose.composeMaterial)
-    implementation (Dependencies.Compose.composeToolingPreview)
-    implementation (Dependencies.Compose.composeActivity)
-    implementation (Dependencies.lifeCycleRuneTime)
-    testImplementation (Dependencies.Test.jUnit)
-    androidTestImplementation(Dependencies.Test.jUnitAndroid)
-    androidTestImplementation(Dependencies.Test.espresso)
-    androidTestImplementation(Dependencies.Test.composeJUnit)
-    debugImplementation (Dependencies.Compose.composeTooling)
+    androidX()
+    compose()
+    retrofit()
+    hilt()
+    tests()
 }
+
